@@ -1,0 +1,58 @@
+.bigbox{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
+    width: 732px;
+    height: 50px;
+    align-items: center;
+    padding: 16px;
+}
+.container{
+    display: flex;
+    width: 750px;
+    height: 750px;
+    border: 10px solid black;
+    /* border-radius: 8px; */
+    flex-wrap: wrap;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border: 1px solid #000000;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    
+}
+
+.clear{
+    display: flex;
+    
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid #000000;
+    padding: 8px;
+}
+
+.otherButtons{
+    display: flex;
+    gap: 56px;
+}
+
+.tile {
+    /* outline: 1px solid #D3D3D3; */
+    transition: outline 0.1s; /* Adjust the duration as needed */
+}
