@@ -52,7 +52,17 @@ button{
     gap: 56px;
 }
 
-.tile {
-    /* outline: 1px solid #D3D3D3; */
-    transition: outline 0.1s; /* Adjust the duration as needed */
+.colorPickerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 120px;
+    height: 40px;
+}
+
+.topbar > div:first-child{
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }

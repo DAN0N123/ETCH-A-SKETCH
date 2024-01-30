@@ -7,10 +7,13 @@ clearButton.addEventListener('click', clearBoard)
 
 const eraserButton = document.querySelector('.eraser')
 
+let originalColor = 'black'
 let color =  'black'
 let toggled = false
 eraserButton.addEventListener('click', toggleEraser)
 
+let colorPicker = document.querySelector('.colorPicker');
+colorPicker.addEventListener("input", (inputColor) => {color = inputColor.target.value})
 function defineGrid(){
     let input = +prompt('Define size of grid (max 100)');
     if (isNaN(input) || input > 100 || input < 0){
@@ -30,8 +33,9 @@ function clearBoard(){
 }
 function toggleEraser(){
     toggled = !toggled; 
+    if (toggled) {originalColor = color};
     eraserButton.style.borderColor = toggled ? '#FD3B3B' : 'black';
-    color = toggled ? 'white' : 'black'; 
+    color = toggled ? 'white' : originalColor; 
 }
 
 inputButton.addEventListener('click', defineGrid)
